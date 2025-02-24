@@ -4,7 +4,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Reviews</title>
-   <link rel="stylesheet" href="reviewsStyle.cssv">
+   <link rel="stylesheet" href="reviewsStyle.css">
    <script src="https://kit.fontawesome.com/e47b2df8a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -80,13 +80,35 @@
    </div>
 
    <div class="containerForInputRewiew">
-      <div>leave your Rewiew</div>
-      <input type="Type here">
-   </div>
+      <div>Leave your review</div>
+      <input type="text" placeholder="Type here" class="TextInput">
+      <button class="TextButton">Finish</button>
+      <div class="user-star" data-total-value="0">
+          <div class="ratingItem" data-item-value="1"><i class="fa-solid fa-star"></i></div>
+          <div class="ratingItem" data-item-value="2"><i class="fa-solid fa-star"></i></div>
+          <div class="ratingItem" data-item-value="3"><i class="fa-solid fa-star"></i></div>
+          <div class="ratingItem" data-item-value="4"><i class="fa-solid fa-star"></i></div>
+          <div class="ratingItem" data-item-value="5"><i class="fa-solid fa-star"></i></div>
+      </div>
+      <div>Your name and age (optional)</div>
+      <input type="text" placeholder="Type here" class="TextInput2">
+  </div>
+  
    <div class="footer-box">
       <footer id="footer-bottom">©2024 pizzeria. Contacts: 0660431512</footer>
    </div>
 
    <div class="bottom-style"></div>
+
+   <div class="modal" id="modalUserRewiew">
+      <div class="modal-inner">
+          <p><b>YOUR REVIEW</b></p>
+          <div id="modalReviewContent"></div> <!-- Блок для содержимого -->
+          <button id="closeModalAboutUs">Close</button>
+      </div>
+  </div>
+  
+
+   <script src="rewiews.js"></script>
 </body>
 </html>
